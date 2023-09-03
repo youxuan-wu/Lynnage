@@ -1,0 +1,15 @@
+header{
+    height: auto;
+    background-color: #a88f67;
+    >ul {
+        display: flex;
+        >li {
+            list-style: none;
+            >a {
+                color: white;
+            }
+        }
+    }
+
+    
+}

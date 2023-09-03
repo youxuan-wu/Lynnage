@@ -1,0 +1,13 @@
+header {
+  height: auto;
+  background-color: #a88f67;
+}
+header > ul {
+  display: flex;
+}
+header > ul > li {
+  list-style: none;
+}
+header > ul > li > a {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
