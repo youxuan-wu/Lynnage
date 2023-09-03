@@ -1,13 +1,41 @@
+@charset "UTF-8";
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 微軟正黑體, sans-serif;
+}
+
 header {
   height: auto;
   background-color: #a88f67;
-}
-header > ul {
   display: flex;
 }
-header > ul > li {
-  list-style: none;
+header .header_left {
+  display: flex;
+  position: relative;
+  left: 5%;
 }
-header > ul > li > a {
+header .header_left > li {
+  list-style: none;
+  text-decoration: none; /* 去掉底線 */
+  margin: 10px;
+}
+header .header_left > li > a {
   color: white;
+  text-decoration: none; /* 去掉底線 */
+}
+header .header_right {
+  display: flex;
+  position: relative;
+  left: 65%;
+}
+header .header_right > li {
+  list-style: none;
+  text-decoration: none; /* 去掉底線 */
+  margin: 10px;
+}
+header .header_right > li > a {
+  color: white;
+  text-decoration: none; /* 去掉底線 */
 }/*# sourceMappingURL=main.css.map */
