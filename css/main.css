@@ -1,9 +1,14 @@
 @charset "UTF-8";
-body, h1, p, ul, li {
+body {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: 微軟正黑體, sans-serif;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none; /* 去掉底線 */
 }
 
 header {
@@ -25,10 +30,16 @@ header .header_left > li > a {
   color: white;
   text-decoration: none; /* 去掉底線 */
 }
+header .header_left > img {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  cursor: pointer;
+}
 header .header_right {
   display: flex;
   position: relative;
-  left: 65%;
+  left: 55%;
 }
 header .header_right > li {
   list-style: none;
@@ -38,4 +49,71 @@ header .header_right > li {
 header .header_right > li > a {
   color: white;
   text-decoration: none; /* 去掉底線 */
+}
+
+nav .nav_top {
+  margin-top: 20px;
+  display: flex;
+}
+nav .nav_top > div {
+  position: relative;
+  left: 10%;
+}
+nav .nav_top > ul {
+  display: flex;
+  position: relative;
+  left: 50%;
+  align-items: flex-end;
+}
+nav .nav_top > ul > li {
+  margin: 0 10px;
+}
+nav .nav_top > ul > li:hover .menu {
+  display: block;
+}
+nav .nav_top > ul > li > a {
+  color: black;
+  font-weight: bold;
+}
+nav .nav_top > ul > li .menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+}
+nav .nav_bottom {
+  padding: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .p1 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+.home .p2 {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
 }/*# sourceMappingURL=main.css.map */

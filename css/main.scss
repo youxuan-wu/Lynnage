@@ -1,8 +1,12 @@
-body, h1, p, ul, li {
+body {
     margin: 0;
     padding: 0;
     font-size: 16px;
     font-family: 微軟正黑體, sans-serif;
+}
+li, a{
+    list-style: none;
+    text-decoration: none; /* 去掉底線 */
 }
   
 header{
@@ -22,11 +26,17 @@ header{
                 text-decoration: none; /* 去掉底線 */
             }
         }
+        >img{
+            width: 32px;
+            height: 32px;
+            margin: 5px;
+            cursor: pointer;
+        }
     }
     .header_right {
         display: flex;
         position: relative;
-        left: 65%;
+        left: 55%;
         >li {
             list-style: none;
             text-decoration: none; /* 去掉底線 */
@@ -37,6 +47,80 @@ header{
             }
         }
     }
+}
 
-    
+nav{
+    .nav_top{
+        margin-top: 20px;
+        display: flex;
+        >div{
+            position: relative;
+            left: 10%;
+        }
+        >ul{
+            display: flex;
+            position: relative;
+            left: 50%;
+            align-items: flex-end;
+            >li{
+                margin: 0 10px;
+                &:hover {
+                    .menu {
+                        display: block;
+                    }
+                }
+                >a{                    
+                    color: black;
+                    font-weight: bold;
+                }
+                .menu{
+                    display: none;
+                    // display: flex;
+                    position: absolute;
+                    top: 120%;
+                    >li{
+                        // display: block;
+                    }
+                }
+            }
+            
+        }
+    }
+    .nav_bottom{
+        padding: 20px;
+    }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home{
+    .p1{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .p2{
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        margin-top: -40px;
+    }
 }
