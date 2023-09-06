@@ -154,6 +154,7 @@ nav{
         >div{
             padding: 0 20%;
             >div{
+                width: auto;
                 margin: 20px;
                 display: flex;
                 border: 7px solid #DED1B4;
@@ -186,16 +187,34 @@ nav{
                         justify-content: center; /* 水平居中对齐 */
                         align-items: center; /* 垂直居中对齐 */
                         >p{
+                            height: 20px;
                             border: 1px solid #9A9A9A;
                             border-right: none;
                             padding: 6px 40px;
                         }
-                        img{
+                        >a{
                             border: 1px solid #9A9A9A;
                             padding: 5px 10px;
                         }
+                        
                     }
                 }
+                &:last-child {
+                    border: none;
+                }
+                .small4{
+                    // width: 100%;
+                    padding: 0;
+                    margin: 0 10px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 25%;
+                    border: 1px solid #DED1B4;
+                    >a>img{
+                        width: 100%;
+                    }
+                }
+
             }
         }
     }

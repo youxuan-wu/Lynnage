@@ -147,6 +147,7 @@ nav .nav_bottom {
   padding: 0 20%;
 }
 .home > div > div > div {
+  width: auto;
   margin: 20px;
   display: flex;
   border: 7px solid #DED1B4;
@@ -182,11 +183,26 @@ nav .nav_bottom {
   align-items: center; /* 垂直居中对齐 */
 }
 .home > div > div > div > div > div > p {
+  height: 20px;
   border: 1px solid #9A9A9A;
   border-right: none;
   padding: 6px 40px;
 }
-.home > div > div > div > div > div img {
+.home > div > div > div > div > div > a {
   border: 1px solid #9A9A9A;
   padding: 5px 10px;
+}
+.home > div > div > div:last-child {
+  border: none;
+}
+.home > div > div > div .small4 {
+  padding: 0;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid #DED1B4;
+}
+.home > div > div > div .small4 > a > img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

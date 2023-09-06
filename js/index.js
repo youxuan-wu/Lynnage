@@ -12,3 +12,18 @@ function changePageColor(pageNumber) {
         }
     });
 }
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const seriesNames = document.querySelectorAll(".item p[data-series]");
+//     const seriesSections = document.querySelectorAll(".item .series");
+
+//     seriesNames.forEach(seriesName => {
+//         seriesName.addEventListener("click", function() {
+//             const series = this.getAttribute("data-series");
+//             seriesSections.forEach(section => {
+//                 section.style.display = "none";
+//             });
+//             document.querySelector(`.item .series.${series}`).style.display = "grid";
+//         });
+//     });
+// });
