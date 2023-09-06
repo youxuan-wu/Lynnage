@@ -205,4 +205,37 @@ nav .nav_bottom {
 }
 .home > div > div > div .small4 > a > img {
   width: 100%;
+}
+
+.story {
+  background-color: #EDEDED;
+  display: flex;
+  padding: 30px;
+}
+.story > div {
+  width: 50%;
+  margin-right: 10px;
+}
+.story > div > img {
+  width: 100%;
+}
+.story .story_right {
+  width: 50%;
+  margin-left: 10px;
+  background-color: #fff;
+}
+.story .story_right .story_title {
+  color: #757575;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.story .story_right .story_title > p {
+  margin: 0 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.story .story_right .story_title > p:hover {
+  color: #000;
+  border-bottom: 3px dashed #000;
 }/*# sourceMappingURL=main.css.map */
