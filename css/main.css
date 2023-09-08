@@ -311,6 +311,49 @@ nav .nav_bottom {
 }
 
 .posts {
+  padding: 30px 25%;
   background-color: #EDEDED;
-  margin: 0;
+}
+.posts > div .p1 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+.posts > div .p2 {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.posts .posts_content {
+  display: flex;
+  justify-content: center;
+}
+.posts .posts_content > div {
+  margin: 20px;
+  background-color: #fff;
+}
+.posts .posts_content > div > div {
+  padding: 25px;
+}
+.posts .posts_content > div > div .p3 {
+  font-size: 22px;
+  margin: -3px 0;
+}
+.posts .posts_content > div > div .p4 {
+  color: #7F8082;
+  margin: 10px 0;
+}
+.posts .posts_content > div > div .p5 {
+  color: #333;
+  margin: -5px 0 20px 0;
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+  padding: 30px;
+}
+footer .footer_top {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
