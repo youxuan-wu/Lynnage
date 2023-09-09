@@ -11,19 +11,21 @@ li, a{
 }
   
 header{
-    height: auto;
+    height: 35px;
     background-color: #a88f67;
     display: flex;
     // position: fixed;
     .header_left {
         display: flex;
         position: relative;
-        left: 5%;
+        // left: 1%;
+        align-items: center;
         >li {
             list-style: none;
             text-decoration: none; /* 去掉底線 */
             margin: 10px;
             >a {
+                font-size: 15px;
                 color: white;
                 text-decoration: none; /* 去掉底線 */
             }
@@ -39,11 +41,13 @@ header{
         display: flex;
         position: relative;
         left: 55%;
+        align-items: center;
         >li {
             list-style: none;
             text-decoration: none; /* 去掉底線 */
             margin: 10px;
             >a {
+                font-size: 15px;
                 color: white;
                 text-decoration: none; /* 去掉底線 */
             }
@@ -59,13 +63,14 @@ nav{
         display: flex;
         >div{
             position: relative;
-            left: 10%;
+            left: 20%;
         }
         >ul{
             display: flex;
             position: relative;
-            left: 50%;
+            left: 45%;
             align-items: flex-end;
+            margin: 0;
             >li{
                 margin: 0 10px;
                 &:hover {
@@ -82,9 +87,12 @@ nav{
                     // display: flex;
                     position: absolute;
                     top: 120%;
-                    // >li{
-                    //     display: block;
-                    // }
+                    >li{
+                        // display: block;
+                        >a{
+                            color: #757575;
+                        }
+                    }
                 }
             }
             

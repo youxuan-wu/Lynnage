@@ -12,14 +12,14 @@ li, a {
 }
 
 header {
-  height: auto;
+  height: 35px;
   background-color: #a88f67;
   display: flex;
 }
 header .header_left {
   display: flex;
   position: relative;
-  left: 5%;
+  align-items: center;
 }
 header .header_left > li {
   list-style: none;
@@ -27,6 +27,7 @@ header .header_left > li {
   margin: 10px;
 }
 header .header_left > li > a {
+  font-size: 15px;
   color: white;
   text-decoration: none; /* 去掉底線 */
 }
@@ -40,6 +41,7 @@ header .header_right {
   display: flex;
   position: relative;
   left: 55%;
+  align-items: center;
 }
 header .header_right > li {
   list-style: none;
@@ -47,6 +49,7 @@ header .header_right > li {
   margin: 10px;
 }
 header .header_right > li > a {
+  font-size: 15px;
   color: white;
   text-decoration: none; /* 去掉底線 */
 }
@@ -58,13 +61,14 @@ nav .nav_top {
 }
 nav .nav_top > div {
   position: relative;
-  left: 10%;
+  left: 20%;
 }
 nav .nav_top > ul {
   display: flex;
   position: relative;
-  left: 50%;
+  left: 45%;
   align-items: flex-end;
+  margin: 0;
 }
 nav .nav_top > ul > li {
   margin: 0 10px;
@@ -80,6 +84,9 @@ nav .nav_top > ul > li .menu {
   display: none;
   position: absolute;
   top: 120%;
+}
+nav .nav_top > ul > li .menu > li > a {
+  color: #757575;
 }
 nav .nav_bottom {
   padding: 20px;
