@@ -365,7 +365,7 @@ footer .footer_top {
 }
 footer .footer_top .icon {
   position: relative;
-  left: 60%;
+  left: 50%;
   display: flex;
   align-items: center;
 }
