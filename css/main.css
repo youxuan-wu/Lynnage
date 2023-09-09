@@ -230,18 +230,18 @@ nav .nav_bottom {
   display: flex;
   justify-content: center;
 }
-.story .story_right .story_title > p {
+.story .story_right .story_title .c1, .story .story_right .story_title .c2, .story .story_right .story_title .c3 {
   width: auto;
   margin: 0 10px;
   font-size: 24px;
   cursor: pointer;
 }
-.story .story_right .story_title > p:hover {
+.story .story_right .story_title .c1:hover, .story .story_right .story_title .c2:hover, .story .story_right .story_title .c3:hover {
   color: #000;
   border-bottom: 3px dashed #000;
 }
-.story .story_right .story2, .story .story_right .story3 {
-  display: none;
+.story .story_right .story_title .c1 > a, .story .story_right .story_title .c2 > a, .story .story_right .story_title .c3 > a {
+  color: #757575;
 }
 .story .story_right > div .p1 {
   display: flex;

@@ -1,31 +1,31 @@
-// 获取按钮元素
-const story1Button = document.getElementById('story1Button');
-const story2Button = document.getElementById('story2Button');
-const story3Button = document.getElementById('story3Button');
+// // 获取按钮元素
+// const story1Button = document.getElementById('story1Button');
+// const story2Button = document.getElementById('story2Button');
+// const story3Button = document.getElementById('story3Button');
 
-// 获取内容元素
-const story1Content = document.querySelector('.story1');
-const story2Content = document.querySelector('.story2');
-const story3Content = document.querySelector('.story3');
+// // 获取内容元素
+// const story1Content = document.querySelector('.story1');
+// const story2Content = document.querySelector('.story2');
+// const story3Content = document.querySelector('.story3');
 
-// 给按钮添加点击事件监听器
-story1Button.addEventListener('click', () => {
-    story1Content.classList.remove('hidden');
-    story2Content.classList.add('hidden');
-    story3Content.classList.add('hidden');
-});
+// // 给按钮添加点击事件监听器
+// story1Button.addEventListener('click', () => {
+//     story1Content.classList.remove('hidden');
+//     story2Content.classList.add('hidden');
+//     story3Content.classList.add('hidden');
+// });
 
-story2Button.addEventListener('click', () => {
-    story1Content.classList.add('hidden');
-    story2Content.classList.remove('hidden');
-    story3Content.classList.add('hidden');
-});
+// story2Button.addEventListener('click', () => {
+//     story1Content.classList.add('hidden');
+//     story2Content.classList.remove('hidden');
+//     story3Content.classList.add('hidden');
+// });
 
-story3Button.addEventListener('click', () => {
-    story1Content.classList.add('hidden');
-    story2Content.classList.add('hidden');
-    story3Content.classList.remove('hidden');
-});
+// story3Button.addEventListener('click', () => {
+//     story1Content.classList.add('hidden');
+//     story2Content.classList.add('hidden');
+//     story3Content.classList.remove('hidden');
+// });
 
 
 
