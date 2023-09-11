@@ -63,7 +63,7 @@ header .header_left > div .ham_menu > li {
   border-bottom: 1px solid #9A9A9A;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 5px 0;
   font-size: 16px;
   color: #000;
   justify-content: space-between;
@@ -97,6 +97,7 @@ header .header_left > div .ham_menu > li .ham_menu1 {
 header .header_left > div .ham_menu > li .ham_menu1 > li {
   height: 25px;
   margin: 10px 0 0 0;
+  border-bottom: 1px solid #9A9A9A;
 }
 header .header_left > div .ham_menu > li .ham_menu1 > li > a {
   color: #000;
@@ -589,6 +590,73 @@ footer .footer_bottom .sixth > div {
   margin: 30px 0;
 }
 .product_home .product_home_second > div .icon > a > img {
+  width: 35px;
+  height: 35px;
+  margin: 0 2px;
+}
+
+.product_free_home {
+  padding: 10px 20%;
+  font-size: 14px;
+}
+.product_free_home .product_home_first {
+  color: #9A9A9A;
+}
+.product_free_home .product_home_first > a {
+  color: #9A9A9A;
+}
+.product_free_home .product_home_first > a:hover {
+  border-bottom: 1px solid #9A9A9A;
+}
+.product_free_home .product_home_second {
+  height: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.product_free_home .product_home_second > div {
+  width: 50%;
+}
+.product_free_home .product_home_second > div > img {
+  margin: 0 20%;
+  padding: 5px 0;
+}
+.product_free_home .product_home_second > div {
+  width: 50%;
+}
+.product_free_home .product_home_second > div .p1 {
+  color: #333;
+}
+.product_free_home .product_home_second > div .p2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.product_free_home .product_home_second > div .price {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+}
+.product_free_home .product_home_second > div .price > div {
+  margin-right: 50px;
+}
+.product_free_home .product_home_second > div .price .price_first {
+  font-size: 18px;
+  font-weight: bold;
+}
+.product_free_home .product_home_second > div .price .price_third {
+  color: #A88F67;
+}
+.product_free_home .product_home_second > div .add_cart {
+  display: flex;
+}
+.product_free_home .product_home_second > div .add_cart > div {
+  margin: 0 40px 0 0;
+}
+.product_free_home .product_home_second > div .icon {
+  margin: 30px 0;
+}
+.product_free_home .product_home_second > div .icon > a > img {
   width: 35px;
   height: 35px;
   margin: 0 2px;
