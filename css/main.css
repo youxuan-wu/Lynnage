@@ -41,7 +41,6 @@ header .header_left > div > input::checked ~ .menu {
   max-height: 300px;
 }
 header .header_left > div > label {
-  padding-right: 50px;
   line-height: 50px;
   cursor: pointer;
 }
@@ -62,7 +61,6 @@ header .header_left > div .ham_menu {
 header .header_left > div .ham_menu > li {
   padding: 5px;
   border-bottom: 1px solid #9A9A9A;
-  display: flex;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 0;
@@ -71,7 +69,12 @@ header .header_left > div .ham_menu > li {
   justify-content: space-between;
   cursor: pointer;
 }
-header .header_left > div .ham_menu > li > div {
+header .header_left > div .ham_menu > li > label {
+  display: flex;
+  padding-right: 50px;
+  cursor: pointer;
+}
+header .header_left > div .ham_menu > li > label > div {
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -79,7 +82,7 @@ header .header_left > div .ham_menu > li > div {
   font-size: 16px;
   color: #000;
 }
-header .header_left > div .ham_menu > li > img {
+header .header_left > div .ham_menu > li > label > img {
   width: 25px;
   height: 25px;
   margin: auto 10px;
@@ -88,12 +91,44 @@ header .header_left > div .ham_menu > li > img {
 header .header_left > div .ham_menu > li > input {
   display: none;
 }
-header .header_left > div .ham_menu > li > label {
-  padding-right: 50px;
-  line-height: 50px;
-  cursor: pointer;
+header .header_left > div .ham_menu > li .ham_menu1 {
+  display: none;
+}
+header .header_left > div .ham_menu > li .ham_menu1 > li {
+  height: 25px;
+  margin: 10px 0 0 0;
+}
+header .header_left > div .ham_menu > li .ham_menu1 > li > a {
+  color: #000;
+}
+header .header_left > div .ham_menu > li .ham_menu1 > hr {
+  width: 99%;
+  position: absolute;
+  left: 0;
+  margin: 0 0;
 }
 header .header_left > div .ham_menu > li #list1:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list2:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list3:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list4:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list5:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list6:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list7:checked + .ham_menu1 {
+  display: block;
+}
+header .header_left > div .ham_menu > li #list8:checked + .ham_menu1 {
   display: block;
 }
 header .header_left > img {

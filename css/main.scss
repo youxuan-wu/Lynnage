@@ -41,7 +41,6 @@ header{
             }
             >label{
                 // float: right;
-                padding-right: 50px;
                 line-height: 50px;
                 cursor: pointer;
             }
@@ -63,7 +62,7 @@ header{
                 >li {
                     padding: 5px;
                     border-bottom: 1px solid #9A9A9A;
-                    display: flex;
+                    // display: flex;
                     font-weight: bold;
                     text-decoration: none;
                     padding: 10px 0;
@@ -71,23 +70,26 @@ header{
                     color: #000;
                     justify-content: space-between;
                     cursor: pointer;
-                    // >label{
-
-                    // }
-                    >div {
-                        font-weight: bold;
-                        text-decoration: none;
-                        display: block;
-                        padding: 10px 0;
-                        font-size: 16px;
-                        color: #000;
-                    }
-                    >img{
-                        width: 25px;
-                        height: 25px;
-                        margin: auto 10px;
+                    >label{     //第一層
                         display: flex;
+                        padding-right: 50px;
+                        cursor: pointer;
+                        >div {
+                            font-weight: bold;
+                            text-decoration: none;
+                            display: block;
+                            padding: 10px 0;
+                            font-size: 16px;
+                            color: #000;
+                        }
+                        >img{
+                            width: 25px;
+                            height: 25px;
+                            margin: auto 10px;
+                            display: flex;
+                        }
                     }
+                    
 
                     //第二層
                     >input{     //打勾小框框
@@ -96,13 +98,44 @@ header{
                         //     max-height: 300px;
                         // }
                     }
-                    >label{
-                        // float: right;
-                        padding-right: 50px;
-                        line-height: 50px;
-                        cursor: pointer;
+                    .ham_menu1{
+                        display: none;
+                        >li{
+                            height: 25px;
+                            margin: 10px 0 0 0;
+                            >a{
+                                color: #000;
+                            }
+                        }
+                        >hr{
+                            width: 99%;
+                            position: absolute;
+                            left: 0;
+                            margin: 0 0;
+                        }
                     }
                     #list1:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list2:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list3:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list4:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list5:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list6:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list7:checked + .ham_menu1 {
+                        display: block;
+                    }
+                    #list8:checked + .ham_menu1 {
                         display: block;
                     }
                 }
