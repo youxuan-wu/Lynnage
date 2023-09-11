@@ -45,10 +45,10 @@ header .header_left > div > label {
   line-height: 50px;
   cursor: pointer;
 }
-header .header_left > div #burger:checked + .menu1 {
+header .header_left > div #burger:checked + .ham_menu {
   display: block;
 }
-header .header_left > div .menu1 {
+header .header_left > div .ham_menu {
   width: 250px;
   z-index: 2;
   clear: both;
@@ -59,7 +59,7 @@ header .header_left > div .menu1 {
   left: 0;
   top: 20px;
 }
-header .header_left > div .menu1 > li {
+header .header_left > div .ham_menu > li {
   padding: 5px;
   border-bottom: 1px solid #9A9A9A;
   display: flex;
@@ -71,7 +71,7 @@ header .header_left > div .menu1 > li {
   justify-content: space-between;
   cursor: pointer;
 }
-header .header_left > div .menu1 > li > div > a {
+header .header_left > div .ham_menu > li > div {
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -79,11 +79,22 @@ header .header_left > div .menu1 > li > div > a {
   font-size: 16px;
   color: #000;
 }
-header .header_left > div .menu1 > li > img {
+header .header_left > div .ham_menu > li > img {
   width: 25px;
   height: 25px;
   margin: auto 10px;
   display: flex;
+}
+header .header_left > div .ham_menu > li > input {
+  display: none;
+}
+header .header_left > div .ham_menu > li > label {
+  padding-right: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+header .header_left > div .ham_menu > li #list1:checked + .ham_menu1 {
+  display: block;
 }
 header .header_left > img {
   width: 25px;

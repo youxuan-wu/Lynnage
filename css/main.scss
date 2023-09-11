@@ -45,14 +45,14 @@ header{
                 line-height: 50px;
                 cursor: pointer;
             }
-            #burger:checked + .menu1 {
+            #burger:checked + .ham_menu {
                 display: block;
             }
-            .menu1 {
+            .ham_menu {
                 // height: 100%;
                 width: 250px;
                 z-index: 2;
-                clear: both;    //清除浮動，以確保.menu1不覆蓋在其他元素上。
+                clear: both;    //清除浮動，以確保.ham_menu不覆蓋在其他元素上。
                 background-color: #fff;
                 display: none;
                 position: absolute;
@@ -71,7 +71,10 @@ header{
                     color: #000;
                     justify-content: space-between;
                     cursor: pointer;
-                    >div>a {
+                    // >label{
+
+                    // }
+                    >div {
                         font-weight: bold;
                         text-decoration: none;
                         display: block;
@@ -84,6 +87,23 @@ header{
                         height: 25px;
                         margin: auto 10px;
                         display: flex;
+                    }
+
+                    //第二層
+                    >input{     //打勾小框框
+                        display: none;
+                        // &::checked ~ .menu {
+                        //     max-height: 300px;
+                        // }
+                    }
+                    >label{
+                        // float: right;
+                        padding-right: 50px;
+                        line-height: 50px;
+                        cursor: pointer;
+                    }
+                    #list1:checked + .ham_menu1 {
+                        display: block;
                     }
                 }
             }
