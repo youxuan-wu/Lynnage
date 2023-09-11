@@ -31,9 +31,63 @@ header .header_left > li > a {
   color: white;
   text-decoration: none; /* 去掉底線 */
 }
+header .header_left > div {
+  margin: 15px 0 0 0;
+}
+header .header_left > div > input {
+  display: none;
+}
+header .header_left > div > input::checked ~ .menu {
+  max-height: 300px;
+}
+header .header_left > div > label {
+  padding-right: 50px;
+  line-height: 50px;
+  cursor: pointer;
+}
+header .header_left > div #burger:checked + .menu1 {
+  display: block;
+}
+header .header_left > div .menu1 {
+  width: 250px;
+  z-index: 2;
+  clear: both;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  padding-left: 10px;
+  left: 0;
+  top: 20px;
+}
+header .header_left > div .menu1 > li {
+  padding: 5px;
+  border-bottom: 1px solid #9A9A9A;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+  justify-content: space-between;
+  cursor: pointer;
+}
+header .header_left > div .menu1 > li > div > a {
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #000;
+}
+header .header_left > div .menu1 > li > img {
+  width: 25px;
+  height: 25px;
+  margin: auto 10px;
+  display: flex;
+}
 header .header_left > img {
-  width: 32px;
-  height: 32px;
+  width: 25px;
+  height: 25px;
   margin: 5px;
   cursor: pointer;
 }
