@@ -754,6 +754,10 @@ footer .footer_bottom .sixth > div {
   .index_home > div > div > div .c1 {
     padding: 0 25%;
   }
+  .index_home > div > div > div .c1 > a > img {
+    width: 100%;
+    height: 100%;
+  }
   .index_home > div > div > div > hr {
     display: none;
   }
@@ -762,5 +766,8 @@ footer .footer_bottom .sixth > div {
   }
   .index_home > div > div > div > div .p5 {
     display: none;
+  }
+  .index_home > div > div > div .small4 {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
