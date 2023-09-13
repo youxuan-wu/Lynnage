@@ -31,7 +31,7 @@ header{
             }
         }
         >div{
-            // display: none;
+            display: none;
             margin: 15px 0 0 0;
             >input{     //打勾小框框
                 display: none;
@@ -154,6 +154,9 @@ header{
         position: relative;
         left: 55%;
         align-items: center;
+        >a>img{
+            display: none;
+        }
         >li {
             list-style: none;
             text-decoration: none; /* 去掉底線 */
@@ -161,6 +164,8 @@ header{
             >a {
                 font-size: 15px;
                 color: white;
+                display: flex;
+                align-items: center;
                 text-decoration: none; /* 去掉底線 */
             }
         }
@@ -387,6 +392,9 @@ footer{
                         >a{
                             border: 1px solid #9A9A9A;
                             padding: 5px 10px;
+                            &:hover{
+                                background-color: #DED1B4;
+                            }
                         }
                         
                     }
@@ -733,6 +741,102 @@ footer{
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 980px){
+    header{
+        height: 45px;
+        .header_left{
+            width: 50%;
+            padding: 0 0;
+            >li, hr{
+                display: none;
+            }
+            >div{
+                display: block;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+            >img{
+                margin: 0 25%;
+            }
+        }
+        .header_right{
+            width: 50%;
+            position: relative;
+            left: 0%;
+            padding: 0 0;
+            margin: 5px 0;
+            >a{
+                // width: 25%;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                >img{
+                    display: block;
+                    margin: 0 25%;
+                }
+            }
+            >li{
+                display: none;
+            }
+        }
+    }
+    nav{
+        height: 70px;
+        .nav_top{
+            margin: 0 0;
+            >div{
+                width: 100%;
+                left: 0;
+                >a{
+                    display: flex;
+                    justify-content: center;
+                    >img{
+                        height: 60px;
+                    }
+                }
+            }
+            >ul{
+                display: none;
+            }
 
+        }
+        .nav_bottom{
+            display: none;
+        }
+    }
+    .index_home{
+        >div{
+            >ul{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                padding: 0 20px;
+                >li{
+                    padding: 10px 0;
+                    width: 100%;
+                    border-right: 1px solid #CCCCCC;
+                }
+            }
+            >div{
+                padding: 0 0;
+                width: 100%;
+                justify-content: center;
+                >div{
+                    flex-direction: column;
+                    .c1{
+                        padding: 0 25%;
+                    }
+                    >hr{
+                        display: none;
+                    }
+                    >div{
+                        padding: 0 25%;
+                        .p5{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

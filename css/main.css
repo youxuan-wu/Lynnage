@@ -32,6 +32,7 @@ header .header_left > li > a {
   text-decoration: none; /* 去掉底線 */
 }
 header .header_left > div {
+  display: none;
   margin: 15px 0 0 0;
 }
 header .header_left > div > input {
@@ -144,6 +145,9 @@ header .header_right {
   left: 55%;
   align-items: center;
 }
+header .header_right > a > img {
+  display: none;
+}
 header .header_right > li {
   list-style: none;
   text-decoration: none; /* 去掉底線 */
@@ -152,6 +156,8 @@ header .header_right > li {
 header .header_right > li > a {
   font-size: 15px;
   color: white;
+  display: flex;
+  align-items: center;
   text-decoration: none; /* 去掉底線 */
 }
 
@@ -366,6 +372,9 @@ footer .footer_bottom .sixth > div {
 .index_home > div > div > div > div > div > a {
   border: 1px solid #9A9A9A;
   padding: 5px 10px;
+}
+.index_home > div > div > div > div > div > a:hover {
+  background-color: #DED1B4;
 }
 .index_home > div > div > div:last-child {
   border: none;
@@ -660,4 +669,98 @@ footer .footer_bottom .sixth > div {
   width: 35px;
   height: 35px;
   margin: 0 2px;
+}
+
+@media (max-width: 980px) {
+  header {
+    height: 45px;
+  }
+  header .header_left {
+    width: 50%;
+    padding: 0 0;
+  }
+  header .header_left > li, header .header_left hr {
+    display: none;
+  }
+  header .header_left > div {
+    display: block;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  header .header_left > img {
+    margin: 0 25%;
+  }
+  header .header_right {
+    width: 50%;
+    position: relative;
+    left: 0%;
+    padding: 0 0;
+    margin: 5px 0;
+  }
+  header .header_right > a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  header .header_right > a > img {
+    display: block;
+    margin: 0 25%;
+  }
+  header .header_right > li {
+    display: none;
+  }
+  nav {
+    height: 70px;
+  }
+  nav .nav_top {
+    margin: 0 0;
+  }
+  nav .nav_top > div {
+    width: 100%;
+    left: 0;
+  }
+  nav .nav_top > div > a {
+    display: flex;
+    justify-content: center;
+  }
+  nav .nav_top > div > a > img {
+    height: 60px;
+  }
+  nav .nav_top > ul {
+    display: none;
+  }
+  nav .nav_bottom {
+    display: none;
+  }
+  .index_home > div > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0 20px;
+  }
+  .index_home > div > ul > li {
+    padding: 10px 0;
+    width: 100%;
+    border-right: 1px solid #CCCCCC;
+  }
+  .index_home > div > div {
+    padding: 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .index_home > div > div > div {
+    flex-direction: column;
+  }
+  .index_home > div > div > div .c1 {
+    padding: 0 25%;
+  }
+  .index_home > div > div > div > hr {
+    display: none;
+  }
+  .index_home > div > div > div > div {
+    padding: 0 25%;
+  }
+  .index_home > div > div > div > div .p5 {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
