@@ -821,6 +821,7 @@ footer{
             .icon{
                 position: absolute;
                 margin: 475px -355px;
+                // background-color: #000;
             }
         }
         .footer_bottom{
@@ -929,6 +930,30 @@ footer{
             flex-direction: column;
             >div{
                 margin: 0 0;
+            }
+        }
+    }
+    .product_home{
+        padding: 10px ;
+        .product_home_second{
+            flex-direction: column;
+            >div{
+                width: 100%;
+                >img{
+                    width: 55%;
+                }
+            }
+        }
+    }
+    .product_free_home{
+        padding: 10px ;
+        .product_home_second{
+            flex-direction: column;
+            >div{
+                width: 100%;
+                >img{
+                    width: 55%;
+                }
             }
         }
     }

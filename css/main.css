@@ -850,6 +850,30 @@ footer .footer_bottom .sixth > div {
   .posts .posts_content > div {
     margin: 0 0;
   }
+  .product_home {
+    padding: 10px;
+  }
+  .product_home .product_home_second {
+    flex-direction: column;
+  }
+  .product_home .product_home_second > div {
+    width: 100%;
+  }
+  .product_home .product_home_second > div > img {
+    width: 55%;
+  }
+  .product_free_home {
+    padding: 10px;
+  }
+  .product_free_home .product_home_second {
+    flex-direction: column;
+  }
+  .product_free_home .product_home_second > div {
+    width: 100%;
+  }
+  .product_free_home .product_home_second > div > img {
+    width: 55%;
+  }
 }
 @media (max-width: 768px) {
   footer .footer_top .icon {
