@@ -808,6 +808,7 @@ footer{
         }
     }
     footer{
+        position: relative;
         .footer_top{
             width: 100%;
             position: relative;
@@ -819,8 +820,7 @@ footer{
             }
             .icon{
                 position: absolute;
-                left: 30px;
-                top: 305%;
+                margin: 475px -355px;
             }
         }
         .footer_bottom{
@@ -939,7 +939,7 @@ footer{
         .footer_top{
             .icon{
                 left: 10px;
-                margin: 170px 0 0 0;
+                margin: 400px 0px;
             }
         }
     }

@@ -733,6 +733,9 @@ footer .footer_bottom .sixth > div {
   nav .nav_bottom {
     display: none;
   }
+  footer {
+    position: relative;
+  }
   footer .footer_top {
     width: 100%;
     position: relative;
@@ -745,8 +748,7 @@ footer .footer_bottom .sixth > div {
   }
   footer .footer_top .icon {
     position: absolute;
-    left: 30px;
-    top: 305%;
+    margin: 475px -355px;
   }
   footer .footer_bottom {
     flex-direction: column;
@@ -852,6 +854,6 @@ footer .footer_bottom .sixth > div {
 @media (max-width: 768px) {
   footer .footer_top .icon {
     left: 10px;
-    margin: 170px 0 0 0;
+    margin: 400px 0px;
   }
 }/*# sourceMappingURL=main.css.map */
