@@ -31,7 +31,7 @@ header{
                 text-decoration: none; /* 去掉底線 */
             }
         }
-        >div{
+        .ham{
             display: none;
             margin: 15px 0 0 0;
             >input{     //打勾小框框
@@ -143,12 +143,59 @@ header{
                 }
             }
         }
-        >img{
-            width: 25px;
-            height: 25px;
-            margin: 5px;
-            cursor: pointer;
+        .SEARCH{
+            >input{     //打勾小框框
+                display: none;
+                &::checked ~ .menu {
+                    max-height: 300px;
+                }
+            }
+            >label{
+                >img{
+                    width: 25px;
+                    height: 25px;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            }
+            #search:checked + .search_div {
+                display: block;
+            }
+            .search_div{
+                z-index: 999;
+                display: none;
+                width: auto;
+                height: 30px;
+                position: absolute;
+                >form{
+                    display: flex;
+                    >input:first-of-type {
+                        width: 200px;
+                        height: 30px;
+                        border: 1px solid #8B8B8B;
+                        font-size: 16px;
+                        outline: none;
+                    }
+                    >input:first-of-type:focus {
+                        border: 1px solid #ccc;
+                        // padding-left: 5px;
+                    }
+                    >input:last-of-type {
+                        /*button按钮border并不占据外围大小，设置高度42px*/
+                        width: 50px;
+                        height: auto;
+                        // position: absolute;
+                        background: #a88f67;
+                        border: 1px solid #bc9440;
+                        color: #fff;
+                        font-size: 16px;
+                        outline: none;
+                        cursor: pointer;
+                        }
+                }
+            }
         }
+        
     }
     .header_right {
         display: flex;
@@ -803,14 +850,18 @@ footer{
             >li, hr{
                 display: none;
             }
-            >div{
+            .ham{
                 display: block;
                 width: 50%;
                 display: flex;
                 justify-content: center;
             }
-            >img{
+            .SEARCH{
                 margin: 0 25%;
+                .search_div{
+                    margin: 3px 0 0 0;
+                    left: 45%;
+                }
             }
         }
         .header_right{

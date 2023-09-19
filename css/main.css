@@ -32,24 +32,24 @@ header .header_left > li > a {
   color: white;
   text-decoration: none; /* 去掉底線 */
 }
-header .header_left > div {
+header .header_left .ham {
   display: none;
   margin: 15px 0 0 0;
 }
-header .header_left > div > input {
+header .header_left .ham > input {
   display: none;
 }
-header .header_left > div > input::checked ~ .menu {
+header .header_left .ham > input::checked ~ .menu {
   max-height: 300px;
 }
-header .header_left > div > label {
+header .header_left .ham > label {
   line-height: 50px;
   cursor: pointer;
 }
-header .header_left > div #burger:checked + .ham_menu {
+header .header_left .ham #burger:checked + .ham_menu {
   display: block;
 }
-header .header_left > div .ham_menu {
+header .header_left .ham .ham_menu {
   width: 250px;
   z-index: 2;
   clear: both;
@@ -60,7 +60,7 @@ header .header_left > div .ham_menu {
   left: 0;
   top: 20px;
 }
-header .header_left > div .ham_menu > li {
+header .header_left .ham .ham_menu > li {
   padding: 5px;
   border-bottom: 1px solid #9A9A9A;
   font-weight: bold;
@@ -71,12 +71,12 @@ header .header_left > div .ham_menu > li {
   justify-content: space-between;
   cursor: pointer;
 }
-header .header_left > div .ham_menu > li > label {
+header .header_left .ham .ham_menu > li > label {
   display: flex;
   padding-right: 50px;
   cursor: pointer;
 }
-header .header_left > div .ham_menu > li > label > div {
+header .header_left .ham .ham_menu > li > label > div {
   font-weight: bold;
   text-decoration: none;
   display: block;
@@ -84,60 +84,100 @@ header .header_left > div .ham_menu > li > label > div {
   font-size: 16px;
   color: #000;
 }
-header .header_left > div .ham_menu > li > label > img {
+header .header_left .ham .ham_menu > li > label > img {
   width: 25px;
   height: 25px;
   margin: auto 10px;
   display: flex;
 }
-header .header_left > div .ham_menu > li > input {
+header .header_left .ham .ham_menu > li > input {
   display: none;
 }
-header .header_left > div .ham_menu > li .ham_menu1 {
+header .header_left .ham .ham_menu > li .ham_menu1 {
   display: none;
 }
-header .header_left > div .ham_menu > li .ham_menu1 > li {
+header .header_left .ham .ham_menu > li .ham_menu1 > li {
   height: 25px;
   margin: 10px 0 0 0;
   border-bottom: 1px solid #9A9A9A;
 }
-header .header_left > div .ham_menu > li .ham_menu1 > li > a {
+header .header_left .ham .ham_menu > li .ham_menu1 > li > a {
   color: #000;
 }
-header .header_left > div .ham_menu > li .ham_menu1 > hr {
+header .header_left .ham .ham_menu > li .ham_menu1 > hr {
   width: 99%;
   position: absolute;
   left: 0;
   margin: 0 0;
 }
-header .header_left > div .ham_menu > li #list1:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list1:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list2:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list2:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list3:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list3:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list4:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list4:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list5:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list5:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list6:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list6:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list7:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list7:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > div .ham_menu > li #list8:checked + .ham_menu1 {
+header .header_left .ham .ham_menu > li #list8:checked + .ham_menu1 {
   display: block;
 }
-header .header_left > img {
+header .header_left .SEARCH > input {
+  display: none;
+}
+header .header_left .SEARCH > input::checked ~ .menu {
+  max-height: 300px;
+}
+header .header_left .SEARCH > label > img {
   width: 25px;
   height: 25px;
   margin: 5px;
+  cursor: pointer;
+}
+header .header_left .SEARCH #search:checked + .search_div {
+  display: block;
+}
+header .header_left .SEARCH .search_div {
+  z-index: 999;
+  display: none;
+  width: auto;
+  height: 30px;
+  position: absolute;
+}
+header .header_left .SEARCH .search_div > form {
+  display: flex;
+}
+header .header_left .SEARCH .search_div > form > input:first-of-type {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #8B8B8B;
+  font-size: 16px;
+  outline: none;
+}
+header .header_left .SEARCH .search_div > form > input:first-of-type:focus {
+  border: 1px solid #ccc;
+}
+header .header_left .SEARCH .search_div > form > input:last-of-type {
+  /*button按钮border并不占据外围大小，设置高度42px*/
+  width: 50px;
+  height: auto;
+  background: #a88f67;
+  border: 1px solid #bc9440;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
   cursor: pointer;
 }
 header .header_right {
@@ -730,14 +770,18 @@ footer .footer_bottom .sixth > div {
   header .header_left > li, header .header_left hr {
     display: none;
   }
-  header .header_left > div {
+  header .header_left .ham {
     display: block;
     width: 50%;
     display: flex;
     justify-content: center;
   }
-  header .header_left > img {
+  header .header_left .SEARCH {
     margin: 0 25%;
+  }
+  header .header_left .SEARCH .search_div {
+    margin: 3px 0 0 0;
+    left: 45%;
   }
   header .header_right {
     width: 50%;
