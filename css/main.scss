@@ -950,7 +950,92 @@ footer{
                         color: #A88F67;
                     }
                 }
+                .c_name_bir{
+                    margin: 0 0 20px 0;
+                    .form-label{
+                        font-size: 14px;
+                        margin: 0 0;
+                        >span{
+                            color: #999;
+                        }
+                    }
+                    .form-control{
+                        border-radius: 0;
+                        height: 30px;
+                        font-size: 14px;
+                        padding: 0 5px;
+                    }
+                    >div{
+                        display: flex;
+                        align-items: center;
+                        .form-select{
+                            width: auto;
+                            height: 30px;
+                            margin: 0 10px;
+                            font-size: 14px;
+                            &:first-child{
+                                margin-left: 0px;
+                            }
+                            &:focus{
+                                border-color: #ccc;
+                                box-shadow: 1px 1px 1px  #ccc;
+                            }
+                            >option{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
             }
+            .sub{
+                >div{
+                    display: flex;
+                    align-items: center;
+                    margin: 5px 0;
+                    >label{
+                        >p{
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin: auto 10px;
+                        }
+                    }
+                }
+            }
+            .send{
+                background-color: #000;
+                width: 30%;
+                padding: 5px 0;
+                margin-top: 40px;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: #A88F67;
+                }
+                .w-200{
+                    color: #fff;
+                    display: block; /* 将链接变为块级元素，以占满整个容器宽度 */
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .join_bottom{
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-top: 15%;
+        padding: 20px 0;
+        >label{
+            cursor: pointer;
+            >p{
+                margin: 0;
+                font-weight: bold;
+            }
+        }
+        >input{
+            display: none;
+        }
+        #subscribe3:checked + .way {
+            display: none;
         }
     }
 }
@@ -1192,5 +1277,8 @@ footer{
                 }
             }
         }
+    }
+    .join_home{
+
     }
 }
