@@ -1020,6 +1020,7 @@ footer{
         }
     }
     .join_bottom{
+        width: 130%;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
         margin-top: 15%;
@@ -1036,6 +1037,9 @@ footer{
         }
         #subscribe3:checked + .way {
             display: none;
+        }
+        .way{
+            padding: 0 20px;
         }
     }
 }
