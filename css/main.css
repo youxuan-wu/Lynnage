@@ -186,16 +186,20 @@ header .header_right {
   align-items: center;
   margin: 0 0;
 }
-header .header_right > a > img {
+header .header_right > img, header .header_right > a > img {
   display: none;
 }
 header .header_right > li {
   list-style: none;
   text-decoration: none; /* 去掉底線 */
   margin: 10px;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 header .header_right > li > a {
-  font-size: 15px;
   color: white;
   display: flex;
   align-items: center;
@@ -841,6 +845,7 @@ footer .footer_bottom .sixth > div {
   color: #A88F67;
 }
 .join_home .join_top .join_content .name .c_name .gender {
+  display: flex;
   position: absolute;
   right: 0;
   top: 53%;
@@ -862,6 +867,26 @@ footer .footer_bottom .sixth > div {
   width: 15px;
   height: 15px;
   margin-right: 2px;
+}
+.join_home .join_top .join_content .name .c_name .gender #male:checked + .male::after {
+  content: " ";
+  background-color: #9A9A9A;
+  border-radius: 20px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 3px;
+}
+.join_home .join_top .join_content .name .c_name .gender #female:checked + .female::after {
+  content: " ";
+  background-color: #9A9A9A;
+  border-radius: 20px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 72px;
 }
 .join_home .join_top .join_content .login .name_0 {
   font-size: 16px;
@@ -1028,8 +1053,12 @@ footer .footer_bottom .sixth > div {
   }
   header .header_right {
     width: 50%;
+    height: 100%;
     padding: 0 0;
-    margin: 5px 0;
+  }
+  header .header_right > img {
+    display: block;
+    margin: 9px 25%;
   }
   header .header_right > a {
     width: 50%;
@@ -1038,7 +1067,7 @@ footer .footer_bottom .sixth > div {
   }
   header .header_right > a > img {
     display: block;
-    margin: 0 25%;
+    margin: 9px 25%;
   }
   header .header_right > li {
     display: none;
@@ -1047,13 +1076,14 @@ footer .footer_bottom .sixth > div {
     height: 70px;
   }
   nav .nav_top {
-    margin: 0 0;
+    margin: 1px 0;
   }
   nav .nav_top > div {
     width: 100%;
     left: 0;
   }
   nav .nav_top > div > a {
+    padding: 3px 0;
     display: flex;
     justify-content: center;
   }
@@ -1221,6 +1251,9 @@ footer .footer_bottom .sixth > div {
   }
   .join_home {
     padding: 50px 5%;
+  }
+  .join_home .join_top .join_content .name .c_name .gender {
+    right: 10%;
   }
   .join_home .join_bottom {
     width: 100%;

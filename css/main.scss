@@ -202,15 +202,19 @@ header{
         left: 55%;
         align-items: center;
         margin: 0 0;
-        >a>img{
+        >img, >a>img{
             display: none;
         }
         >li {
             list-style: none;
             text-decoration: none; /* 去掉底線 */
             margin: 10px;
+            font-size: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
             >a {
-                font-size: 15px;
                 color: white;
                 display: flex;
                 align-items: center;
@@ -925,6 +929,7 @@ footer{
                         color: #A88F67;
                     }
                     .gender{
+                        display: flex;
                         position: absolute;
                         right: 0;
                         top: 53%;
@@ -946,6 +951,32 @@ footer{
                                 margin-right: 2px;
                             }
                         }
+                        #male:checked + .male::after{
+                            content: " ";
+                            background-color: #9A9A9A;
+                            border-radius: 20px;
+                            display: inline-block;
+                            width: 9px;
+                            height: 9px;
+                            position: absolute;
+                            left: 3px;
+                        }
+                        // #male:checked + .female::after{
+                        //     display: none;
+                        // }
+                        #female:checked + .female::after{
+                            content: " ";
+                            background-color: #9A9A9A;
+                            border-radius: 20px;
+                            display: inline-block;
+                            width: 9px;
+                            height: 9px;
+                            position: absolute;
+                            left: 72px;
+                        }
+                        // #female:checked + .male::after{
+                        //     display: none;
+                        // }
                     }
                 }
             }
@@ -1127,8 +1158,13 @@ footer{
         }
         .header_right{
             width: 50%;
+            height: 100%;
             padding: 0 0;
-            margin: 5px 0;
+            // margin: 5px 0;
+            >img{
+                display: block;
+                margin: 9px 25%;
+            }
             >a{
                 // width: 25%;
                 width: 50%;
@@ -1136,7 +1172,7 @@ footer{
                 justify-content: center;
                 >img{
                     display: block;
-                    margin: 0 25%;
+                    margin: 9px 25%;
                 }
             }
             >li{
@@ -1147,11 +1183,12 @@ footer{
     nav{
         height: 70px;
         .nav_top{
-            margin: 0 0;
+            margin: 1px 0;
             >div{
                 width: 100%;
                 left: 0;
                 >a{
+                    padding: 3px 0;
                     display: flex;
                     justify-content: center;
                     >img{
@@ -1341,6 +1378,17 @@ footer{
     }
     .join_home{
         padding: 50px 5%;
+        .join_top{
+            .join_content{
+                .name{
+                    .c_name{
+                        .gender{
+                            right: 10%;
+                        }
+                    }
+                }
+            }
+        }
         .join_bottom{
             width: 100%;
         }
