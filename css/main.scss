@@ -1211,9 +1211,10 @@ footer{
         }
     }
     footer{
+        position: relative;
         .footer_top{
             width: 100%;
-            position: relative;
+            // position: relative;
             left: 0%;
             >img{
                 position: relative;
@@ -1222,7 +1223,7 @@ footer{
             }
             .icon{
                 position: absolute;
-                top: 315%;
+                top: 88%;
                 left: 4%;
             }
         }
@@ -1231,6 +1232,7 @@ footer{
             // padding: 0 10%;
             width: 100%;
             height: auto;
+            position: relative;
             .first{
                 position: relative;
                 left: 5%;

@@ -1099,9 +1099,11 @@ footer .footer_bottom .sixth > div {
   nav .nav_bottom {
     display: none;
   }
+  footer {
+    position: relative;
+  }
   footer .footer_top {
     width: 100%;
-    position: relative;
     left: 0%;
   }
   footer .footer_top > img {
@@ -1111,13 +1113,14 @@ footer .footer_bottom .sixth > div {
   }
   footer .footer_top .icon {
     position: absolute;
-    top: 315%;
+    top: 88%;
     left: 4%;
   }
   footer .footer_bottom {
     flex-direction: column;
     width: 100%;
     height: auto;
+    position: relative;
   }
   footer .footer_bottom .first {
     position: relative;
