@@ -189,7 +189,7 @@ header .header_right {
 header .header_right > img, header .header_right > a > img {
   display: none;
 }
-header .header_right > li {
+header .header_right > li, header .header_right .login_content > label {
   list-style: none;
   text-decoration: none; /* 去掉底線 */
   margin: 10px;
@@ -199,11 +199,35 @@ header .header_right > li {
   align-items: center;
   cursor: pointer;
 }
-header .header_right > li > a {
+header .header_right > li > a, header .header_right .login_content > label > a {
   color: white;
   display: flex;
   align-items: center;
   text-decoration: none; /* 去掉底線 */
+}
+header .header_right .login_content > input {
+  display: none;
+}
+header .header_right .login_content .cont {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+}
+header .header_right .login_content .cont .login_left {
+  width: 50%;
+}
+header .header_right .login_content .cont .login_right {
+  width: 40%;
+}
+header .header_right .login_content #login:checked + .cont {
+  display: flex;
+  background-color: white;
 }
 
 nav .nav_top {
@@ -1113,7 +1137,7 @@ footer .footer_bottom .sixth > div {
   }
   footer .footer_top .icon {
     position: absolute;
-    top: 88%;
+    top: 89%;
     left: 4%;
   }
   footer .footer_bottom {

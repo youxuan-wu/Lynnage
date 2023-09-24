@@ -205,7 +205,7 @@ header{
         >img, >a>img{
             display: none;
         }
-        >li {
+        >li, .login_content>label {
             list-style: none;
             text-decoration: none; /* 去掉底線 */
             margin: 10px;
@@ -219,6 +219,44 @@ header{
                 display: flex;
                 align-items: center;
                 text-decoration: none; /* 去掉底線 */
+            }
+            
+        }
+        .login_content{
+            >input{
+                display: none;
+            }
+            .cont{
+                // display: flex;
+                // display: none;
+                position: absolute;
+                top: 8%;
+                left: 0;
+                width: 100%;
+                height: auto;
+                z-index: 999;
+                color: #000;
+                background-color: #fff;
+                cursor: auto;
+                .login_left{
+                    width: 50%;
+                    >p{
+                        
+                    }
+                }
+                .login_right{
+                    width: 40%;
+                    >p{
+                        
+                    }
+                }
+                // >hr{
+                //     width: 10%;
+                // }
+            }
+            #login:checked + .cont{
+                display: flex;
+                background-color: white;
             }
         }
     }
@@ -1223,7 +1261,7 @@ footer{
             }
             .icon{
                 position: absolute;
-                top: 88%;
+                top: 89%;
                 left: 4%;
             }
         }
