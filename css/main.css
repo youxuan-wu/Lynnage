@@ -186,7 +186,7 @@ header .header_right {
   align-items: center;
   margin: 0 0;
 }
-header .header_right > img, header .header_right > a > img {
+header .header_right .sam > label, header .header_right .sam > input, header .header_right .sam > div, header .header_right .sam > a {
   display: none;
 }
 header .header_right > li, header .header_right .login_content > label {
@@ -223,8 +223,9 @@ header .header_right .login_content .cont {
 }
 header .header_right .login_content .cont .login_left {
   padding-bottom: 20px;
-  width: 50%;
+  width: 55%;
   margin: 0 0 20px 20%;
+  border-right: 1px solid #000;
 }
 header .header_right .login_content .cont .login_left > p {
   font-size: 14px;
@@ -1139,16 +1140,95 @@ footer .footer_bottom .sixth > div {
     height: 100%;
     padding: 0 0;
   }
-  header .header_right > img {
-    display: block;
-    margin: 9px 25%;
+  header .header_right .sam {
+    width: 50%;
+    display: flex;
   }
-  header .header_right > a {
+  header .header_right .sam > label {
+    margin: 4px 40%;
+    display: block;
+  }
+  header .header_right .sam > input {
+    display: none;
+  }
+  header .header_right .sam .box {
+    display: none;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: #fff;
+  }
+  header .header_right .sam .box .login_left {
+    margin: 10px 0 0 20px;
+    padding-bottom: 20px;
+  }
+  header .header_right .sam .box .login_left > p {
+    font-size: 14px;
+  }
+  header .header_right .sam .box .login_left > div {
+    width: 200px;
+    background-color: #000;
+    text-align: center;
+  }
+  header .header_right .sam .box .login_left > div > a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    display: inline-block;
+  }
+  header .header_right .sam .box .login_left > ul {
+    font-weight: bold;
+    margin: 20px 0 0 -30px;
+  }
+  header .header_right .sam .box .login_left > ul > li {
+    font-weight: 400;
+    list-style-type: square;
+    color: #999999;
+    font-size: 14px;
+    margin: 10px 20px;
+  }
+  header .header_right .sam .box .login_right {
+    margin: 0px 0 0 20px;
+  }
+  header .header_right .sam .box .login_right .g-3 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  header .header_right .sam .box .login_right .g-3 .col-auto > input {
+    height: 27px;
+  }
+  header .header_right .sam .box .login_right .g-3 .col-auto > input:focus {
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+  header .header_right .sam .box .login_right .g-3 .login {
+    width: 80px;
+    height: 30px;
+    background-color: #000;
+    text-align: center;
+  }
+  header .header_right .sam .box .login_right .g-3 .login > a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header_right .sam #sample:checked + .box {
+    display: block;
+  }
+  header .header_right .sam > a {
     width: 50%;
     display: flex;
     justify-content: center;
+    margin: 0px 50%;
   }
-  header .header_right > a > img {
+  header .header_right .sam > a > img {
     display: block;
     margin: 9px 25%;
   }
